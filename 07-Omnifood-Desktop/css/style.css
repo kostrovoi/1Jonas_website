@@ -44,7 +44,7 @@ body {
   /* Default font-size: 16px;  10px/16px=0.625 == 62.5%*/
   font-size: 62.5%;
   line-height: 1;
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   color: #555;
 }
@@ -67,13 +67,34 @@ textarea, select {
   font: inherit;
 }
 
+/* Header section starts----------------------- */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  padding: 1em;
+  height: 4em;
+  background-color: #fdf2e9;
+}
+
+.logo {
+  height: 2.2rem;
+}
+/*
+.main-nav {
+  font-size: 1.8rem;
+} */
+
+/* Hero section starts---------------------- */
+
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem;
+  padding: 4.8rem 0.8rem 6.4rem;
 }
 
 .hero {
-  width: 90%;
+  width: 98%;
   max-width: 130rem;
   margin-inline: auto;
 
@@ -105,6 +126,7 @@ textarea, select {
   display: inline-block;
   padding: 1.6rem 3.2rem;
   font-size: 2rem;
+  font-weight: 600;
   letter-spacing: 0.4px;
   text-decoration: none;
   margin: 0.8rem;
@@ -138,4 +160,45 @@ textarea, select {
   /* border: 2px solid #333; */
   /* trick to replicate the border without an issue */
   box-shadow: inset 0 0 0 4px #fff;
+}
+
+.delivered-meals {
+  margin-top: 8rem;
+
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-imgs {
+  display: flex;
+
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* flex: 1; */
+}
+
+.delivered-imgs img {
+  /* safary's issue needs for flex element width and height */
+
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 2px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }

@@ -1,0 +1,67 @@
+html,
+body {
+  font-size: 1.125rem;
+  box-sizing: border-box;
+  color: #707070;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  width: 95%;
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: #212614;
+  text-align: center;
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/*  Layout  */
+
+img {
+  max-width: 100%;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+  gap: 1em;
+}
+
+.col-bg {
+  background-color: #212614;
+  color: #fff;
+  padding: 1em;
+}
+
+.col-1 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.col-3 {
+  width: 75%;
+}
