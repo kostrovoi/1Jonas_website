@@ -45,18 +45,20 @@ cf711f 10% /
 
 ---- 6 BORDER_RADIUS
 Default: 8px
+12px
 
 
 ---- 7 WHITESPACE
 
 - Spacing System
-  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 /
+  64 / 80 / 96 / 128
 
 */
 
 html,
 body {
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
 
   /* Default font-size: 16px;  10px/16px=0.625 == 62.5%*/
   font-size: 62.5%;
@@ -86,6 +88,10 @@ select {
   font: inherit;
 }
 
+strong {
+  font-weight: 500;
+}
+
 /* Reusable components ------------------------ */
 .container {
   max-width: 120rem;
@@ -93,12 +99,20 @@ select {
   padding: 0 3.2rem;
 }
 
-.grid-2-col {
+.grid {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 4.8rem;
-  grid-template-columns: repeat(2, 1fr);
   align-items: center;
+}
+
+.grid-2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: unset;
 }
 
 .heading-primary,
