@@ -361,8 +361,12 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.8rem;
+  gap: 1.4rem;
   padding: 1.6rem 1.6rem 1.6rem 0;
+}
+
+.gallery-item {
+  overflow: hidden;
 }
 
 .gallery-img {
@@ -370,9 +374,9 @@
    we set display: block to img element */
   /* vertical-align: bottom; */
   background-color: #e67e22;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 .gallery-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
