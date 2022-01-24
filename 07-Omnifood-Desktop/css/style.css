@@ -380,3 +380,51 @@
 .gallery-img:hover {
   transform: scale(1.2);
 }
+
+/* section-pricing ------------------------- */
+.section-pricing {
+  font-size: 1.6rem;
+  padding: 9.6rem;
+}
+/* list for this section is reusable from diets-list */
+
+.plan-header {
+ text-align: center;
+ margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  line-height: 1.6rem;
+  color: #6e6e6e;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.section-pricing .grid-2-col {
+  align-items: unset;
+}
