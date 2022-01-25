@@ -119,6 +119,11 @@ strong {
   align-items: unset;
 }
 
+.grid-4-col {
+  grid-template-columns: repeat(4, 1fr);
+  align-items: unset;
+}
+
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
