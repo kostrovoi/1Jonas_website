@@ -33,6 +33,7 @@ fae5d3 80%
 f8d8bd 70%
 f3bf91 50%
 f0b27a 40%
+eb984e 20%
 
 - Shades:
 cf711f 10% /
@@ -46,6 +47,8 @@ cf711f 10% /
 #6e6e6e (lightest grey allowed on #fdf2e9 90%)
 
 ---- 5 SHADOWS
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.08);
+
 
 ---- 6 BORDER_RADIUS
 Default: 8px
