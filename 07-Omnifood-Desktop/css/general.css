@@ -36,7 +36,8 @@ f0b27a 40%
 eb984e 20%
 
 - Shades:
-cf711f 10% /
+cf711f 10%
+#45260a
 
 - Accents:
 
@@ -163,6 +164,7 @@ strong {
   margin-bottom: 1.6rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
