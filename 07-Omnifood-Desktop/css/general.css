@@ -74,6 +74,8 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   color: #555;
+
+  scroll-behavior: smooth;
 }
 
 *,
@@ -125,6 +127,11 @@ strong {
 
 .grid-4-col {
   grid-template-columns: repeat(4, 1fr);
+  align-items: unset;
+}
+
+.grid-5-col {
+  grid-template-columns: repeat(5, 1fr);
   align-items: unset;
 }
 

@@ -610,3 +610,13 @@
   background-color: #fff;
   color: #555;
 }
+
+/**********************************/
+/* Footer ----------------------------- */
+/**********************************/
+
+footer {
+  padding: 9.6rem 0;
+  background-color: blanchedalmond;
+  font-size: 1.6rem;
+}
