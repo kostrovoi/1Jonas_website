@@ -1,0 +1,99 @@
+/* rem and em do not depend on html font-size in media-queries */
+/* медиа выражения проигнорируют установленный нами
+font-size и будут всегда плясать от браузерных дефолтных 16px*/
+/* 1rem == 1em == 16px */
+/* бум юзать em так как пока есть баги в браузерах из-за rem */
+
+
+/* below 1900px == 118em */
+
+@media (max-width: 118em) {
+  .header {
+    padding: 3.2rem;
+    justify-content: space-between;
+  }
+}
+
+/* ***************************************** */
+/* below 1344px / 16px = 84em  Smaller desktops */
+/* ***************************************** */
+
+@media (max-width: 84em) {
+  .hero {
+    /* background-color: aquamarine; */
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .gallery {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 0 2.4rem;
+  }
+
+  .testimonials-container {
+    padding: 4.8rem;
+  }
+}
+
+/* ************************************************* */
+/* 1200px / 16px = 75em */
+/* below 1200px Landscape Tablets */
+/* ************************************************* */
+@media (max-width: 75em) {
+  html,
+  body {
+    /* 9px / 16px = 0.5625 */
+    /* уменьшим размер шрифта на 1px */
+    font-size: 56.25%;
+  }
+
+  /* we don't change the mental convention 1rem === 10px */
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .grid {
+  row-gap: 6.4rem;
+  column-gap: 3.2rem;
+  }
+
+  .header {
+    padding: 0 1.9rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .delivered-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonials {
+    column-gap: 6rem;
+  }
+
+  .testimonials-container {
+    padding: 3.2rem;
+  }
+}
+
+/* - Font sizes(px)
+10 / 12 / 14 / 16 / 18 / 20 /24/
+30/ 36/44 /52 / 62 / 74 / 86 / 98 */
+
+/* - Spacing System
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 /
+  64 / 80 / 96 / 128 */
