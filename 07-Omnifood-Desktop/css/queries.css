@@ -4,7 +4,6 @@ font-size и будут всегда плясать от браузерных д
 /* 1rem == 1em == 16px */
 /* бум юзать em так как пока есть баги в браузерах из-за rem */
 
-
 /* below 1900px == 118em */
 
 @media (max-width: 118em) {
@@ -29,7 +28,7 @@ font-size и будут всегда плясать от браузерных д
   }
 
   .gallery {
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .header {
@@ -64,8 +63,8 @@ font-size и будут всегда плясать от браузерных д
   }
 
   .grid {
-  row-gap: 6.4rem;
-  column-gap: 3.2rem;
+    row-gap: 6.4rem;
+    column-gap: 3.2rem;
   }
 
   .header {
@@ -87,6 +86,122 @@ font-size и будут всегда плясать от браузерных д
 
   .testimonials-container {
     padding: 3.2rem;
+  }
+
+  .section-pricing {
+    padding: 9.6rem 0;
+  }
+
+  .pricing-plan__complete .plan-text {
+    padding: 0 0.2rem;
+  }
+
+  .plan-text {
+    line-height: 1.4;
+  }
+}
+
+/* ************************************************* */
+/* 940px / 16px = 58.75em  59em * 16px = 944px*/
+/* below 944px Tablets */
+/* ************************************************* */
+
+@media (max-width: 59em) {
+  html,
+  body {
+    /* 8px / 16px = 0.5 */
+    /* уменьшим размер шрифта ещё на 1px */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box {
+    max-width: 70%;
+    margin-inline: auto;
+  }
+
+  .delivered-meals {
+    margin-top: 3.2rem;
+  }
+
+  .hero-img-box {
+    max-width: 84%;
+    margin-inline: auto;
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  .logo-img {
+    height: 2.8rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+    padding: 3.2rem 0;
+  }
+
+  /*
+.gallery {
+  grid-template-columns: repeat(6, 1fr);
+} */
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3.2rem;
+  }
+
+  .gallery-item:nth-child(3),
+  .gallery-item:nth-child(5),
+  .gallery-item:nth-child(6),
+  .gallery-item:nth-child(8) {
+    display: none;
+  }
+
+  .section-pricing {
+    font-size: 1.8rem;
+  }
+
+  .pricing-plan {
+    padding: 3.2rem 2.4rem;
+    line-height: 1.4;
+  }
+
+  .diets-list__item {
+    margin-bottom: 1.6rem;
+  }
+
+  .container__cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    font-size: 1.8rem;
+    grid-template-columns: 1fr;
+  }
+
+  .cta-form button {
+    padding: 1.2rem 2.4rem;
+    margin-top: 4rem;
+  }
+
+  footer,
+  .footer-nav {
+    font-size: 1.8rem;
   }
 }
 

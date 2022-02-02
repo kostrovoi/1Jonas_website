@@ -13,10 +13,12 @@ bold: 700
 
 --Line Heights
 Default: 1
-1.1
-1.2
+for h1 1.1
+small 1.2
+medium 1.4
+
 paragraph default: 1.6
-1.8
+large 1.8
 
 --Letter Spacing
 -0.5px
