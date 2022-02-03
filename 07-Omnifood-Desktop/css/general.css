@@ -77,6 +77,10 @@ body {
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   color: #555;
+  /* overflow should be chaining with html selector */
+  /* only works if there is nothing absolutely positioned
+  in relation to body or else we can do swipe! */
+  overflow-x: hidden;
 
   scroll-behavior: smooth;
 }
