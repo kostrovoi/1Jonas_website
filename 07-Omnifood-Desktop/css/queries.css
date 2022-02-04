@@ -267,6 +267,74 @@ font-size и будут всегда плясать от браузерных д
   }
 }
 
+/* ************************************************* */
+/* 700px / 16px = 43.75em  44em * 16px = 704px*/
+/* below 704px Smaller Tablets */
+/* ************************************************* */
+
+@media (max-width: 44em) {
+  .grid-3-col,
+  .grid-4-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .diets {
+    grid-column: 1 / -1;
+  }
+
+  .diets h3 {
+    text-align: center;
+  }
+
+  .diets-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 44em;
+  }
+
+  .diets-list__item {
+    margin-bottom: 3.2rem;
+    margin-right: 2.4rem;
+  }
+
+  .diets-list__item:last-child {
+    margin-bottom: 3.2rem;
+  }
+
+  .diets-list__item--icon {
+    margin-right: 1rem;
+  }
+
+  .margin-bottom-md {
+    margin-bottom: 3.2rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid-5-col {
+    /* trick tospan empty space */
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .nav-col {
+    /* take these columns to the top */
+    grid-row: 1;
+    grid-column: span 2;
+  }
+}
 /* - Font sizes(px)
 10 / 12 / 14 / 16 / 18 / 20 /24/
 30/ 36/44 /52 / 62 / 74 / 86 / 98 */
