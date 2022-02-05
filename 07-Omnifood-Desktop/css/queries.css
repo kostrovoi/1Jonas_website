@@ -93,7 +93,7 @@ font-size и будут всегда плясать от браузерных д
   }
 
   .pricing-plan__complete .plan-text {
-    padding: 0 0.2rem;
+    padding: 0 0.4rem;
   }
 
   .plan-text {
@@ -177,6 +177,7 @@ font-size и будут всегда плясать от браузерных д
   }
 
   .pricing-plan {
+    width: 84%;
     padding: 3.2rem 2.4rem;
     line-height: 1.4;
   }
@@ -295,10 +296,17 @@ font-size и будут всегда плясать от браузерных д
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    max-width: 44em;
   }
 
   .diets-list__item {
+    margin-bottom: 3.2rem;
+    margin-right: 2.4rem;
+  }
+
+  .diets-list__item--card {
+    display: flex;
+    align-items: center;
+
     margin-bottom: 3.2rem;
     margin-right: 2.4rem;
   }
@@ -333,6 +341,29 @@ font-size и будут всегда плясать от браузерных д
     /* take these columns to the top */
     grid-row: 1;
     grid-column: span 2;
+  }
+
+  /* more custom changes */
+
+  .hero-text-box {
+    max-width: 90%;
+  }
+
+  .delivered-meals {
+    flex-wrap: wrap;
+  }
+
+  .hero-img-box {
+    max-width: 96%;
+  }
+
+  .container__cta {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .cta-img-box {
+    grid-column: 1 / -1;
   }
 }
 /* - Font sizes(px)
