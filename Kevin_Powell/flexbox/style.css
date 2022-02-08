@@ -65,3 +65,17 @@ img {
 .col-3 {
   width: 75%;
 }
+
+/* ************************************* */
+/* media-queries -media type. Let's us target different types of media */
+/* @media screen {} */
+/* @media print {} */
+/* @media speech {} */
+/* media-queries -media condition. Let's us target specific conditions within that media type */
+/*  Widths - @media (min-width: 600px) {} */
+/* orientations -   @media (orientation: landscape) {} */
+/* specific features - @media (hover) {} */
+
+/* you can combine a type with a condition using keyword - and */
+/* @media (orientation: landscape) and (min-width: 600px) {} */
+/* ******************************************* */

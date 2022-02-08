@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>flex-basic</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -15,6 +16,41 @@
     <div class="img-wrapper">
       <img src="images/elephants.jpg" alt="elephants in their natural habitat">
     </div>
+
+    <!-- Let's add Vue here -->
+    <div id="app" style="background-color: aquamarine;">
+
+     <h1>Contact Form</h1>
+
+     <p style="color: red;">{{ error }}</p>
+
+     <form method="post" action="#">
+         <div>
+             <label for="name">Name</label>
+             <input name="name" id="name" v-model="form.name" />
+             <p style="color: red;">{{ nameValidation }}</p>
+         </div>
+         <div>
+             <label for="email">Email</label>
+             <input name="email" id="email" v-model="form.email" />
+             <p style="color: red;">{{ emailValidation }}</p>
+         </div>
+         <div>
+             <label for="message">Message</label>
+             <textarea name="message" id="message" v-model="form.message"></textarea>
+             <p style="color: red;">{{ messageValidation }}</p>
+         </div>
+
+         <button @click.prevent="validateForm">Send Form</button>
+     </form>
+
+     <h2>Form Details</h2>
+
+     <p><strong>Name</strong> {{ form.name }}</p>
+     <p><strong>Email</strong> {{ form.email }}</p>
+     <p><strong>Message</strong> {{ form.message }}</p>
+
+  </div>
 
     <div class="columns">
       <div class="col col-1">
@@ -58,6 +94,9 @@
       </div>
     </div>
   </div>
+
+
+<script src="scr.js"></script>
 
 </body>
 
