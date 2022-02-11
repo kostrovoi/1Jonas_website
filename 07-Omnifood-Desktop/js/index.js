@@ -18,3 +18,8 @@ for(; condition;) {
   }
 }
 
+const yearEl = document.querySelector('.currentYear');
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+
+yearEl.textContent = currentYear;
