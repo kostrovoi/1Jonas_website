@@ -213,11 +213,12 @@ font-size и будут всегда плясать от браузерных д
 
   .btn-mobile-nav {
     display: block;
+    z-index: 999;
   }
 
   .main-nav {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     top: 0;
     right: 0;
     width: 100%;

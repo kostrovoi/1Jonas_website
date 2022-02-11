@@ -18,8 +18,18 @@ for(; condition;) {
   }
 }
 
+// set current year
 const yearEl = document.querySelector('.currentYear');
 const currentYear = new Date().getFullYear();
 console.log(currentYear);
 
 yearEl.textContent = currentYear;
+
+// make mobile navigation work
+const headerEl = document.querySelector('.header');
+const mobileNavEl = document.querySelector('.btn-mobile-nav');
+console.log(mobileNavEl);
+
+mobileNavEl.addEventListener('click', () => {
+  headerEl.classList.toggle('nav-open');
+})
