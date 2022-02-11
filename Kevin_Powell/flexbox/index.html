@@ -14,43 +14,49 @@
   <div class="container">
     <h1>Let's start <span>getting a little</span> more fancy! </h1>
     <div class="img-wrapper">
-      <img src="images/elephants.jpg" alt="elephants in their natural habitat">
+      <!-- <img src="images/elephants.jpg" alt="elephants in their natural habitat"> -->
     </div>
 
     <!-- Let's add Vue here -->
     <div id="app" style="background-color: aquamarine;">
 
-     <h1>Contact Form</h1>
+      <h1>Contact Form</h1>
 
-     <p style="color: red;">{{ error }}</p>
+      <p style="color: red;">{{ error }}</p>
 
-     <form method="post" action="#">
-         <div>
-             <label for="name">Name</label>
-             <input name="name" id="name" v-model="form.name" />
-             <p style="color: red;">{{ nameValidation }}</p>
-         </div>
-         <div>
-             <label for="email">Email</label>
-             <input name="email" id="email" v-model="form.email" />
-             <p style="color: red;">{{ emailValidation }}</p>
-         </div>
-         <div>
-             <label for="message">Message</label>
-             <textarea name="message" id="message" v-model="form.message"></textarea>
-             <p style="color: red;">{{ messageValidation }}</p>
-         </div>
+      <form method="post" action="#">
+        <div>
+          <label for="name">Name</label>
+          <input name="name" id="name" v-model="form.name" />
+          <p style="color: red;">{{ nameValidation }}</p>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input name="email" id="email" v-model="form.email" />
+          <p style="color: red;">{{ emailValidation }}</p>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" v-model="form.message"></textarea>
+          <p style="color: red;">{{ messageValidation }}</p>
+        </div>
 
-         <button @click.prevent="validateForm">Send Form</button>
-     </form>
+        <label for="field">fullName</label>
+        <input name="field" v-model="fullName" />
 
-     <h2>Form Details</h2>
+        <p>The current firstName value is: {{ firstName }}</p>
+        <p>The current lastName value is: {{ lastName }}</p>
 
-     <p><strong>Name</strong> {{ form.name }}</p>
-     <p><strong>Email</strong> {{ form.email }}</p>
-     <p><strong>Message</strong> {{ form.message }}</p>
+        <button @click.prevent="validateForm">Send Form</button>
+      </form>
 
-  </div>
+      <h2>Form Details</h2>
+
+      <p><strong>Name</strong> {{ form.name }}</p>
+      <p><strong>Email</strong> {{ form.email }}</p>
+      <p><strong>Message</strong> {{ form.message }}</p>
+
+    </div>
 
     <div class="columns">
       <div class="col col-1">
@@ -96,7 +102,7 @@
   </div>
 
 
-<script src="scr.js"></script>
+  <script src="scr.js"></script>
 
 </body>
 
