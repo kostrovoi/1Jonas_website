@@ -82,7 +82,8 @@ body {
   in relation to body or else we can do swipe! */
   overflow-x: hidden;
 
-  scroll-behavior: smooth;
+  /* does not work on old Safari */
+  /* scroll-behavior: smooth; */
 }
 
 *,
