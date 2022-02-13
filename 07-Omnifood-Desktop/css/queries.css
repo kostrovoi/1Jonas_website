@@ -4,8 +4,20 @@ font-size и будут всегда плясать от браузерных д
 /* 1rem == 1em == 16px */
 /* бум юзать em так как пока есть баги в браузерах из-за rem */
 
-/* below 1900px == 118em */
 
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* below 1900px == 118em */
 @media (max-width: 118em) {
   .header {
     padding: 3.2rem;
