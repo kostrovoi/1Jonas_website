@@ -65,3 +65,32 @@ allLinks.forEach(function(link) {
   });
 });
 
+//////////////////////////////////////////////////
+// sticky navigation
+
+const sectionHeroEl = document.querySelector('.section-hero');
+
+
+const observer = new IntersectionObserver(function(entries) {
+  const entry = entries[0];
+  console.log(entry);
+
+  // (entry.isIntersecting === false) can rewrite (!entry.isIntersecting)
+  if(entry.isIntersecting === false) {
+    document.body.classList.add('sticky');
+  }
+
+  // (entry.isIntersecting === true) can rewrite (entry.isIntersecting)
+  if(entry.isIntersecting === true) {
+    document.body.classList.remove('sticky');
+  }
+}, {
+  // in the viewport, null means viewport
+  root: null,
+  // event happens as soon as 0% of the .section-hero is inside of the viewport
+  threshold: 0,
+  // threshold: 1 means the .section-hero is inside of the viewport on 100%
+  rootMargin: '-80px',
+  // '-80px' === 8rem the height of sticky header
+});
+observer.observe(sectionHeroEl);
